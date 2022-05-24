@@ -1,6 +1,8 @@
 import Header from './components/Header';
 import Content from './components/Content';
 import Footer from './components/Footer';
+import ContentTest from './components/ContentTest';
+
 import './components/style.css';
 
 import React, { Component } from "react";
@@ -8,6 +10,8 @@ import SimpleStorageContract from "./contracts/SimpleStorage.json";
 import getWeb3 from "./getWeb3";
 
 import "./App.css";
+
+//For bootstarp
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 
@@ -65,6 +69,7 @@ class App extends Component {
       <React.Fragment>
        <Header />
        <Content />
+       <ContentTest/>
        <Footer />
     </React.Fragment>
     );
