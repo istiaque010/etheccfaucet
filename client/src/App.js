@@ -1,7 +1,6 @@
 import Header from './components/Header';
 import Content from './components/Content';
 import Footer from './components/Footer';
-import ContentTest from './components/ContentTest';
 
 import './components/style.css';
 
@@ -69,7 +68,6 @@ class App extends Component {
       <React.Fragment>
        <Header />
        <Content />
-       <ContentTest/>
        <Footer />
     </React.Fragment>
     );

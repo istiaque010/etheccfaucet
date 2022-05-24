@@ -78,20 +78,11 @@ import React from 'react';
                      </Accordion.Item>
                      </Accordion>
        
-            
              </div>
             </div>
 
           </div>   
-        </section>  
-
-
-         
- 
-    
-    
-    <br/> <br/><br/><br/>
- 
+        </section> 
      
  
    </div>
