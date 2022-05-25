@@ -38,7 +38,7 @@ import React from 'react';
                   <Carousel.Item>
                      <img
                         className="d-block w-100"
-                        src="Images/banner-1.jpg"
+                        src="Images/banner-2.jpg"
                         alt="Second slide"
                      />
 
@@ -50,7 +50,7 @@ import React from 'react';
                   <Carousel.Item>
                      <img
                         className="d-block w-100"
-                        src="Images/banner-1.jpg"
+                        src="Images/banner-3.jpg"
                         alt="Third slide"
                      />
 
