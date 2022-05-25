@@ -1,43 +1,55 @@
-import React from 'react';
+
+import React, { Component } from 'react'; 
+import { Navbar, Nav, NavItem, NavDropdown, MenuItem, Container } from 'react-bootstrap';
 
  
  
 function Header() {
   return (
-    <section className="navbar header">
-       <div className="container">
-          <div className="row">
-           <div className="col-sm-12"> 
-            <nav className="navbar navbar-expand-lg ">
-              <a className="navbar-brand text-white" href="#">GIST-Infonet | ETH-ECC Faucet</a>
-              <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-              </button>
+
  
-              <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul className="navbar-nav mr-auto">
-                  <li className="nav-item ">
-                    <a className="nav-link " href="#about">About<span className="sr-only">(current)</span></a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#destinations">Destinations<span className="sr-only">(current)</span></a>
-                  </li>
-                  <li className="nav-item dropdown">
-                  <a className="nav-link" href="#places">Places<span className="sr-only">(current)</span></a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link " href="#tourist">Resourecs</a>
-                  </li>
-                </ul>
-                 
-                 <button className='btn btn-danger connectButton' >Connect Wallet</button>
-                 
-              </div>
-             </nav>
-            </div>
-          </div>
-        </div>
-    </section> 
+       
+
+            <Navbar collapseOnSelect expand="lg" sticky='top' className='header'>
+              <Container>
+
+                <Navbar.Brand href="#home">
+                <img
+                  alt=""
+                  src="Images/gist.png"
+                  width="30"
+                  height="30"
+                  className="d-inline-block align-top"
+                />{' '}
+              GIST-Infonet
+              </Navbar.Brand>
+
+              <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+              <Navbar.Collapse id="responsive-navbar-nav">
+                <Nav className="me-auto">
+                  <Nav.Link href="#features">Features</Nav.Link>
+                  <Nav.Link href="#pricing">Pricing</Nav.Link>
+                  <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
+                    <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                  </NavDropdown>
+                </Nav>
+                <Nav>
+                  <Nav.Link href="#deets">More deets</Nav.Link>
+                  <Nav.Link eventKey={2} href="#memes">
+                    Dank memes
+                  </Nav.Link>
+                </Nav>
+              </Navbar.Collapse>
+              </Container>
+            </Navbar>
+
+
+    
+    
   );
 }
 export default Header;
