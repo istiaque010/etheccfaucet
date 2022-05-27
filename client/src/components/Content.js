@@ -14,6 +14,8 @@ import ToggleButton from 'react-bootstrap/ToggleButton';
 
 import Card from 'react-bootstrap/Card';
 
+import Container from 'react-bootstrap/Container';
+
 
 
 import React from 'react';
@@ -63,7 +65,7 @@ import React from 'react';
         </section>  
 
 
-        <section className="bg-light" id="about">
+        <section className="bg-light pt-5" id="faucet">
           <div className="container">
             <div className="row">
               <div className="col-sm-12 col-md-12">
@@ -81,7 +83,7 @@ import React from 'react';
                            <InputGroup className="mb-2">
                            <InputGroup.Text>Public Address</InputGroup.Text>
                            <FormControl id="inlineFormInputGroup" placeholder="0x2C57957Bd0fb9EC71abD1115aD97..." />
-                           <InputGroup.Text><Button type="submit">
+                           <InputGroup.Text><Button type="submit" size='sm'>
                            Submit
                            </Button></InputGroup.Text>
                            </InputGroup>
@@ -108,7 +110,7 @@ import React from 'react';
 
 
 
-    <section>
+    <section className='pt-5' id='transaction'>
        <div className='container'>
          <div className='row gx-0'>
          <h3 className="text-center mt-4 mb-4 text-secondary">Transactions</h3>
@@ -123,7 +125,7 @@ import React from 'react';
                   </Card.Text>
                   
                </Card.Body>
-               <Card.Footer className="text-muted"><Button variant="primary">Transaction Details</Button></Card.Footer>
+               <Card.Footer className="text-muted"><Button variant="primary" size='sm'>Transaction Details</Button></Card.Footer>
                </Card>
 
                <Card className="text-center" style={{ width: '25rem' , margin:'auto', background:'none', marginBottom:'30px'}}>
@@ -136,7 +138,7 @@ import React from 'react';
                   </Card.Text>
                   
                </Card.Body>
-               <Card.Footer className="text-muted"><Button variant="primary">Transaction Details</Button></Card.Footer>
+               <Card.Footer className="text-muted"><Button variant="primary" size='sm'>Transaction Details</Button></Card.Footer>
                </Card>
 
                <Card className="text-center" style={{ width: '25rem' , margin:'auto', background:'none', marginBottom:'30px'}}>
@@ -149,7 +151,7 @@ import React from 'react';
                   </Card.Text>
                   
                </Card.Body>
-               <Card.Footer className="text-muted"><Button variant="primary">Transaction Details</Button></Card.Footer>
+               <Card.Footer className="text-muted"><Button variant="primary" size='sm'>Transaction Details</Button></Card.Footer>
                </Card>
 
        </div>
@@ -158,7 +160,7 @@ import React from 'react';
     </section>
 
  
-       <section className=""  id="places">
+       <section className="pt-5 pb-2"  id="description">
         <div className="container">
           <div className="col-sm-12 col-md-12 mb-4">
              <h3 className="text-center text-secondary mt-4">Description</h3>
@@ -212,63 +214,62 @@ import React from 'react';
     </section>
 
 
+    <section className='bg-light pt-5 pb-5' id='resource'>
+       <div className='container'>
+         <div className='row gx-0'>
+         <h3 className="text-center mt-4 mb-4 text-secondary">Resources</h3>
 
-    <section className="bg-light mt-5" id="tourist">   
-
-     <div className="container">
-      <div className="row text-center">
-        <div className="col-sm-12 col-md-12 mb-4">
-            <h3 className="text-center mt-4 text-secondary">Resource Team</h3>
-         </div>
-         </div>
-
-         <div className='row text-center'>
-         
-               <Card style={{ width: '25rem' , margin:'auto', border:'none', background:'none', marginBottom:'30px'}}>
-               <center><Card.Img variant="top" src="Images/1.jpg" className="rounded-circle z-depth-1 img-fluid" style={{height:'13vw', width:'13vw'}}/></center> 
-                  <Card.Body>
-                     <Card.Title>Heung-No Lee</Card.Title>
-                     <h6 className="font-weight-bold blue-text my-3">Professor</h6>
-                     <Card.Text>
-                        Some quick example text to build on the card title and make up the bulk of
-                        the card's content.
-                     </Card.Text>
-                    
-                  </Card.Body>
-                  </Card>
-
-                  <Card style={{ width: '25rem' , margin:'auto', border:'none', background:'none', marginBottom:'30px'}}>
-                   <center><Card.Img variant="top" src="Images/2.jpg" className="rounded-circle z-depth-1 img-fluid" style={{height:'13vw', width:'13vw'}}/></center> 
-                  <Card.Body>
-                     <Card.Title>Istiaque Ahmed</Card.Title>
-                     <h6 className="font-weight-bold blue-text my-3">Researcher</h6>
-                     <Card.Text>
-                        Some quick example text to build on the card title and make up the bulk of
-                        the card's content.
-                     </Card.Text>
-                    
-                  </Card.Body>
-                  </Card>
-
-                  <Card style={{ width: '25rem' , margin:'auto', border:'none', background:'none', marginBottom:'30px'}}>
-                  <center><Card.Img variant="top" src="Images/3.jpg" className="rounded-circle z-depth-1 img-fluid" style={{height:'13vw', width:'13vw'}}/></center> 
-                  <Card.Body>
-                     <Card.Title>Seunngmin Kim</Card.Title>
-                     <h6 className="font-weight-bold blue-text my-3">Researcher</h6>
-                     <Card.Text>
-                        Some quick example text to build on the card title and make up the bulk of
-                        the card's content.
-                     </Card.Text>
-                    
-                  </Card.Body>
-                  </Card>
+               <Card className="text-center" style={{ width: '25rem' , margin:'auto', background:'none', marginBottom:'30px'}}>
+               <Card.Header></Card.Header>
+               <center><Card.Img variant="top" src="Images/1.jpg" className=" z-depth-1 img-fluid rounded-circle" style={{height:'13vw', width:'13vw'}}/></center> 
+               <Card.Body>
+                  <Card.Title>Heung-No Lee</Card.Title>
+                  <h6 className="font-weight-bold blue-text my-3">Professor</h6>
+                  <Card.Text>
+                     With supporting text below as a natural lead-in to additional content.
+                  </Card.Text>
                   
-         </div>
-      </div>
+               </Card.Body>
+               <Card.Footer className="text-muted"><Button variant="primary" size='sm'>Details</Button></Card.Footer>
+               </Card>
 
-   </section>
+               <Card className="text-center" style={{ width: '25rem' , margin:'auto', background:'none', marginBottom:'30px'}}>
+               <Card.Header></Card.Header>
+               <center><Card.Img variant="top" src="Images/2.jpg" className=" z-depth-1 img-fluid rounded-circle" style={{height:'13vw', width:'13vw'}}/></center> 
+               <Card.Body>
+                  <Card.Title>Istiaque Ahmed</Card.Title>
+                  <h6 className="font-weight-bold blue-text my-3">Researcher</h6>
+                  <Card.Text>
+                     With supporting text below as a natural lead-in to additional content.
+                  </Card.Text>
+                  
+               </Card.Body>
+               <Card.Footer className="text-muted"><Button variant="primary" size='sm'>Details</Button></Card.Footer>
+               </Card>
 
- 
+               <Card className="text-center" style={{ width: '25rem' , margin:'auto', background:'none', marginBottom:'30px'}}>
+               <Card.Header></Card.Header>
+               <center><Card.Img variant="top" src="Images/3.jpg" className=" z-depth-1 img-fluid rounded-circle" style={{height:'13vw', width:'13vw'}}/></center> 
+               <Card.Body>
+                  <Card.Title>Seunngmin Kim</Card.Title>
+                  <h6 className="font-weight-bold blue-text my-3">Researcher</h6>
+                  <Card.Text>
+                     With supporting text below as a natural lead-in to additional content.
+                  </Card.Text>
+                  
+               </Card.Body>
+               <Card.Footer className="text-muted"><Button variant="primary" size='sm'>Details</Button></Card.Footer>
+               </Card>
+
+       </div>
+
+       </div>
+    </section>
+
+    
+
+
+
 
    </div>
     );

@@ -26,7 +26,7 @@ import React from 'react';
           <div className="container">
             <div className="row">
               <div className="col-sm-12 col-md-12">
-                 <h3 className="text-center mt-4 text-secondary">Requeast ETH-ECC Faucet</h3>
+                 <h3 className="text-center mt-4 text-secondary" id='faucet'>Requeast ETH-ECC Faucet</h3>
              </div>
               </div>
 
