@@ -4,33 +4,8 @@ import { Navbar, Nav, NavItem, NavDropdown, MenuItem, Container } from 'react-bo
 import Button from 'react-bootstrap/Button';
 
  
- //if you declare ES6 function you may declare other function inside this function
-const Header = () =>{
-
-//--------------all functions that you need-----------------
-  function connectWallet(){
-
-
-    //-----just test it is working or not
-    if (typeof window.ethereum == "undefined") {
-      console.log("Please install MetaMask!");
-      
-    } else {
-      console.log("MetaMask is installed!");
-    }
-    console.log("connectWallet Button clicked...");
-
-    //end -----just test it is working or not
-
-
-  }
-
-
-//--------end all functions that you need-------------------
-
-
-
-//return from your component
+ 
+function Header() {
   return (
             <Navbar collapseOnSelect expand="lg" sticky='top' className='header'>
               <Container>
@@ -74,6 +49,6 @@ const Header = () =>{
 
     
     
-  )
-};
+  );
+}
 export default Header;
