@@ -4,6 +4,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Table from 'react-bootstrap/Table';
 import InputGroup from 'react-bootstrap/InputGroup';
 import FormControl from 'react-bootstrap/FormControl';
 
@@ -22,6 +23,8 @@ import React from 'react';
 
  
   function Content() {
+
+  
     return (
        <div>
          <section className="">
@@ -94,7 +97,29 @@ import React from 'react';
 
               </div>
 
+              
+              <div className="row m-0 mt-3">
 
+                 
+                     <Table striped bordered hover >
+                   
+                     <tbody>
+                        <tr>
+                           
+                           <td style={{width:'20%'}}>Connected Acount:</td>
+                           <td>0x2C57957Bd0fb9EC71abD1115aD97...</td>
+                           <td style={{width:'20%'}}>Balence: </td>
+                        </tr>
+                        <tr>
+                           
+                           <td>Transaction Hash: </td>
+                           <td colSpan={2}>0x2C57957Bd0fb9EC71abD1115aD97...</td>
+                           
+                        </tr>
+                        
+                     </tbody>
+                     </Table>
+             </div> 
 
              <div className="row">
                 <p className="mt-4 mb-5 " style={{textAlign:'justify'}}>
@@ -103,7 +128,8 @@ import React from 'react';
                information theory, and signal processing, and research interests include machine learning, signal processing, computational intelligence,
                computational imaging, communications , networks and Blockchain. This lab provide implementation oppotunities of researchs in applications.
                 </p>
-             </div>   
+             </div> 
+
           </div>   
         </section>   
 

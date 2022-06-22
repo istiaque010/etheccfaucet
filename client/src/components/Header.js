@@ -3,25 +3,41 @@ import React, { Component } from 'react';
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem, Container } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 
+import getWeb3 from "../getWeb3";
+
  
  //if you declare ES6 function you may declare other function inside this function
 const Header = () =>{
 
 //--------------all functions that you need-----------------
-  function connectWallet(){
+  const connectWallet = async()=>{
 
+    try{
+      if(typeof window.ethereum!=='undefined'){
+        console.log("MetaMask is installed!");
+
+        const accounts = await window.ethereum.request({
+          method: "eth_requestAccounts",
+        });
+        const account = accounts[0];
+
+        console.log("MetaMask is installed!");
+        
+      }
+      else{
+        console.log("Please install MetaMask!");
+      }
+
+    }
+    catch(e){
+
+      console.log(e);
+
+    }
 
     //-----just test it is working or not
-    if (typeof window.ethereum == "undefined") {
-      console.log("Please install MetaMask!");
-      
-    } else {
-      console.log("MetaMask is installed!");
-    }
+ 
     console.log("connectWallet Button clicked...");
-
-    //end -----just test it is working or not
-
 
   }
 
